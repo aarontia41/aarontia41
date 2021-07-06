@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="pdf.css" />
+    <script src="pdf.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+
+</head>
+<style>
+    th {
+        padding: 0 10px;
+    }
+    .containerTablePoints {
+        float: right;
+        position: relative;
+    }
+    .points {
+        position: absolute;
+        bottom: -15px;
+        left: -75px;
+        font-weight: bold;
+    }
+    .scoring {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 10px;
+    }
+</style>
+<body>
+    <div class="container d-flex justify-content-center mt-50 mb-50">
+        <div class="row">
+            
+            <div class="col-md-12">
+                <div class="card" id="invoice">
+                    <div class="card-header bg-transparent">
+                        <div class="1st">
+                            <div class="text-center">
+                                <h4>Technological University of the Philippines</h4>
+                                <p style="margin-top: -10px;">Ayala Boulevard, Ermita, Manila</p>
+                                <h4 style="margin-top: 30px;">PASUC Common Criteria for Evaluation of Faculty</h4>
+                                <h4 style="margin-top: -5px;">NBC 461</h4> 
+                            </div>
+                                <table class="text-center scoring">
+                                    <tr>
+                                        <th class="text-center" colspan="2" style="font-size: 13px;">Evaluator's<br>Rating</th>
+                                        <th class="text-center" colspan="2" style="font-size: 13px;">Verifier's<br>Rating</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Raw<br>Score</th>
+                                        <th>Equivalent<br>points</th>
+                                        <th>Raw<br>Score</th>
+                                        <th>Equivalent<br>points</th>
+                                    </tr>
+                                    <tr>
+                                        <th><u>RS</u></th>
+                                        <th><u>EP</u></th>
+                                        <th><u>RS</u></th>
+                                        <th><u>EP</u></th>
+                                    </tr>
+                                </table>
+                                <table cellpadding="5">
+                                    
+                                    <tr>
+                                        <th>1.0</th>
+                                        <th colspan="4">Educational Qualification</th>
+                                        <th style="text-align: end;">Points: 85.0</th>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td style="width: 10px;">1.1</td>
+                                        <td colspan="100%">Highest relevant academic degree or educational attainment</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"></td>
+                                        <td colspan="100%">NB In case of research-work graduate program, certified true copy of diploma and periodic evaluation of research from the supervisor adviser shall be presented.</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3"></td>
+                                        <td style="width: 5px;">1.1.1</td>
+                                        <td>Doctorate</td>
+                                        <td colspan="7"></td>
+                                        <td>85.0</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3"></td>
+                                        <td>1.1.2</td>
+                                        <td>Master's Degree</td>
+                                        <td colspan="7"></td>
+                                        <td>65.0</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3"></td>
+                                        <td>1.1.3</td>
+                                        <td>LLB and MD</td>
+                                        <td colspan="7"></td>
+                                        <td>65.0</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3"></td>
+                                        <td colspan="100%">N.B.: MD is considered a doctorate if holder is licensed and teaching in a College of Medicine. LLB is considered a Master's Degree if holder is a bar passer and teaching professional subject.</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3"></td>
+                                        <td>1.1.4</td>
+                                        <td colspan="1">Diploma Course (Above a Bachelor's Degree)</td>
+                                        <td colspan="7"></td>
+                                        <td>65.0</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3"></td>
+                                        <td>NB.:</td>
+                                        <td colspan="3">Diploma in line with the field of specialization</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3"></td>
+                                        <td>1.1.5</td>
+                                        <td colspan="3">Bachelor's Degree</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3"></td>
+                                        <td>NB.:</td>
+                                        <td colspan="13">Graduates of DVM, Engineering and DOM programs are considered bachelor's degree holders with additional points for years beyond 4</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4"></td>
+                                        <td>a.</td>
+                                        <td colspan="7">Four years</td>
+                                        <td>45.0</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4"></td>
+                                        <td>b.</td>
+                                        <td colspan="7">Exceeding four years</td>
+                                        <td>50.0</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3"></td>
+                                        <td>1.1.6</td>
+                                        <td colspan="3">SPECIAL COURSES</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4"></td>
+                                        <td>a.</td>
+                                        <td colspan="7">3-years post secondary course</td>
+                                        <td>30.0</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4"></td>
+                                        <td>b.</td>
+                                        <td colspan="7">Special Courses (Non-degree)</td>
+                                        <td>25.0</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3"></td>
+                                        <td>1.2</td>
+                                        <td colspan="13">Additional equivalent degree earned related to the present position</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4"></td>
+                                        <td>1.2.1</td>
+                                        <td colspan="7">Master's Degree</td>
+                                        <td>4.0</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                    </tr>
+                                </table>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="col-md-12 text-right mb-3">
+        <button class="btn btn-primary" id="download"> download pdf</button>
+    </div>
+</body>
+
+</html>
